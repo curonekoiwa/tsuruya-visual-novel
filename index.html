@@ -1,0 +1,278 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#282633"><title>鶴矢先輩と僕の日常｜夏の部室</title><style>
+:root{--ink:#f6eef0;--panel:rgba(31,29,42,.88);--accent:#d9b9c8}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#191823;color:var(--ink);font-family:'Hiragino Kaku Gothic ProN','Yu Gothic',system-ui,sans-serif;overflow:hidden}button{font:inherit;cursor:pointer}#shell{width:100vw;height:100dvh;display:flex;align-items:center;justify-content:center;background:#191823}#game{width:min(100vw,177.7778dvh);height:min(100dvh,56.25vw);position:relative;overflow:hidden;background:#777080;isolation:isolate;box-shadow:0 0 0 1px #4a414f}#room{position:absolute;inset:0;background:linear-gradient(120deg,rgba(252,226,196,.35),transparent 48%),linear-gradient(180deg,#a7a0ad 0%,#b7abb0 56%,#746976 100%)}#room:before{content:'';position:absolute;left:4%;top:4%;width:39%;height:65%;border:12px solid #6e6270;background:linear-gradient(130deg,rgba(255,243,216,.93),rgba(226,203,195,.55)),repeating-linear-gradient(90deg,transparent 0 49%,#6f626c 49% 51%);box-shadow:0 0 40px #f7ddc5}#room:after{content:'';position:absolute;bottom:9%;left:-6%;width:115%;height:21%;background:linear-gradient(#9c8790,#695967);transform:skewY(-3deg);border-top:8px solid #514c56}.shelf{position:absolute;right:3%;top:7%;width:27%;height:67%;border:10px solid #615461;background:repeating-linear-gradient(180deg,#8e7982 0 23%,#4f4654 23% 26%);opacity:.85}.shelf:after{content:'';position:absolute;inset:7%;background:repeating-linear-gradient(90deg,#aa8d94 0 5%,#665864 5% 7%,#c2a6a1 7% 11%,#786d79 11% 14%,transparent 14% 17%);opacity:.7}.light{position:absolute;inset:0;background:linear-gradient(112deg,rgba(255,244,222,.33),transparent 48%);pointer-events:none}.figure{position:absolute;bottom:13%;left:48%;width:29%;height:77%;transform:translateX(-50%);filter:drop-shadow(0 7px 12px #39303a70);transition:opacity .25s,transform .25s}.figure svg{width:100%;height:100%}.figure.hidden{opacity:0;transform:translateX(-50%) translateY(3%)}#top{position:absolute;top:2%;left:2%;right:2%;display:flex;justify-content:space-between;align-items:center;z-index:4}#chapter{font-size:clamp(10px,1.5vw,17px);letter-spacing:.14em;text-shadow:0 2px 4px #222}#tools{display:flex;gap:5px}#tools button,.smallbtn{background:#292735a8;border:1px solid #f5e6ef55;border-radius:5px;color:white;padding:6px 9px;font-size:clamp(9px,1.15vw,13px)}#dialog{position:absolute;bottom:2.5%;left:3%;width:94%;height:31%;background:var(--panel);border:1px solid #e4cdd17d;border-radius:8px;z-index:5;padding:1.6% 2.5%;box-shadow:0 8px 30px #28202a55;cursor:pointer;user-select:none}#name{color:#f0cddc;font-weight:700;font-size:clamp(12px,1.8vw,22px);margin-bottom:1%}#line{font-size:clamp(12px,1.65vw,21px);line-height:1.75;white-space:pre-line;max-width:95%;letter-spacing:.035em}#next{position:absolute;right:2%;bottom:6%;color:#f3d4e0;animation:bob 1.2s infinite}@keyframes bob{50%{transform:translateY(5px)}}#choices{position:absolute;z-index:8;left:23%;right:23%;top:23%;display:flex;flex-direction:column;gap:12px}#choices button{background:#f9f0f0ee;border:1px solid #9b788f;border-radius:6px;color:#423545;padding:13px 8px;font-size:clamp(12px,1.5vw,19px);box-shadow:0 3px 12px #2225}#choices button:active{background:#ead3df}#overlay{position:absolute;inset:0;z-index:12;background:linear-gradient(135deg,#312b3fdd,#5f5065e8);display:flex;align-items:center;justify-content:center;text-align:center;padding:4%}#overlay h1{font-family:serif;font-weight:400;font-size:clamp(23px,4vw,56px);margin:0 0 14px}#overlay p{font-size:clamp(12px,1.5vw,18px);line-height:1.8}#overlay button,.primary{background:#f2e5e9;color:#463c4b;border:0;border-radius:6px;padding:12px 28px;margin:7px;font-size:clamp(13px,1.5vw,19px)}#overlay .sub{font-size:clamp(11px,1.25vw,15px);opacity:.85}#history{position:absolute;z-index:11;inset:8% 9%;background:#24222eef;border:1px solid #bfaab9;border-radius:10px;padding:18px;overflow:auto;display:none}#history h2{margin:0 0 10px}#history p{border-bottom:1px solid #ffffff25;padding-bottom:9px;line-height:1.6;font-size:14px}#history button{float:right}.toast{position:absolute;z-index:15;top:13%;left:50%;transform:translateX(-50%);background:#252331ec;padding:9px 18px;border-radius:6px;display:none;white-space:nowrap;font-size:14px}#rotate{display:none}@media(orientation:portrait) and (max-width:800px){#rotate{position:fixed;left:10%;right:10%;bottom:8px;z-index:20;background:#252331df;border:1px solid #d9c5d4;border-radius:8px;display:block;text-align:center;padding:6px;font-size:11px;pointer-events:none}#rotate span{display:none}}@media(max-height:440px){#dialog{height:36%}#line{line-height:1.48}#tools button{padding:3px 7px}}
+
+#room{background: url("images/clubroom.jpg") center center / cover no-repeat!important}
+#room:before,#room:after{display:none!important}
+.figure{left:68%;bottom:19%;height:72%;width:30%;display:flex;justify-content:center;align-items:flex-end;filter:drop-shadow(0 5px 10px #30252d88)}
+.figure img{display:block;width:auto;height:100%;max-width:100%;object-fit:contain;object-position:center bottom}
+.light{background:linear-gradient(90deg,rgba(255,233,202,.12),transparent 65%)}
+#dialog{background:rgba(29,27,38,.9)}
+@media(max-height:440px){.figure{bottom:22%;height:70%}}
+
+/* Ver.0.3: stable portrait staging, consistent expression canvas, readable UI */
+.figure{left:70%;bottom:26%;height:70%;width:34%;transform:translateX(-50%);align-items:flex-start;filter:drop-shadow(0 6px 9px #29212b88)}
+.figure img{height:100%;width:100%;max-width:none;object-fit:contain;object-position:center top}
+.figure.hidden{transform:translateX(-50%) translateY(2%)}
+#dialog{height:34%;bottom:2%;padding:1.5% 2.5%;backdrop-filter:blur(3px)}
+#name{margin-bottom:.5%}#line{line-height:1.55;font-size:clamp(12px,1.65vw,20px)}
+#choices{left:21%;right:21%;top:22%;gap:9px}
+#choices button{padding:10px 8px;min-height:35px}
+@media(max-height:440px){.figure{bottom:29%;height:67%}#dialog{height:38%}#line{font-size:clamp(11px,1.5vw,17px);line-height:1.35}#name{font-size:clamp(11px,1.5vw,17px)}#tools button{padding:3px 6px}}
+
+/* Ver.0.4 cinematic events */
+#windVeil{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;background:linear-gradient(110deg,transparent 20%,rgba(255,245,219,.23) 47%,transparent 75%);transform:translateX(-100%)}
+#windVeil.active{animation:windSweep 2.5s ease-in-out both}
+@keyframes windSweep{0%{opacity:0;transform:translateX(-100%)}35%{opacity:1}100%{opacity:0;transform:translateX(100%)}}
+#noteCut{position:absolute;inset:0;z-index:7;pointer-events:none;display:flex;align-items:center;justify-content:center;background:rgba(20,19,29,.62);opacity:0;transition:opacity .55s}
+#noteCut.active{opacity:1}#notePaper{width:min(52%,480px);min-height:44%;padding:5% 5% 4%;background:#e8dcca;color:#514449;box-shadow:0 8px 35px #15111d99;transform:rotate(-3deg) translateY(14px);transition:transform .6s;font-family:serif;text-align:center;border:1px solid #b6a395;display:flex;flex-direction:column;justify-content:center;gap:15px}
+#noteCut.active #notePaper{transform:rotate(-2deg) translateY(0)}#noteTitle{font-size:clamp(11px,1.3vw,18px);letter-spacing:.18em}#noteWriting{font-size:clamp(13px,2.1vw,27px);line-height:1.8;white-space:pre-line}#noteCut.mystery #notePaper{background:#d7ccbf;color:#3b3039}
+#flash{position:absolute;inset:0;z-index:9;pointer-events:none;background:#fff3e8;opacity:0}#flash.active{animation:softFlash .9s ease-out}@keyframes softFlash{0%{opacity:0}15%{opacity:.53}100%{opacity:0}}
+#effectCaption{position:absolute;top:14%;left:8%;z-index:6;font-size:clamp(12px,1.7vw,22px);letter-spacing:.2em;text-shadow:0 2px 8px #1c1828;opacity:0;pointer-events:none}#effectCaption.active{animation:captionIn 2.5s ease both}@keyframes captionIn{20%{opacity:1}70%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){#windVeil.active,#flash.active,#effectCaption.active{animation:none}#noteCut,#notePaper{transition:none}}
+#soundPanel{position:absolute;top:10%;right:2%;z-index:10;background:#292735ed;border:1px solid #f5e6ef55;border-radius:7px;padding:10px;display:none;font-size:13px}#soundPanel label{display:block;margin-bottom:7px}#soundPanel input{width:145px;vertical-align:middle}#soundPanel button{background:#f2e5e9;border:0;border-radius:4px;padding:5px 12px;color:#463c4b}#tools button[aria-pressed="true"]{border-color:#f0cddc;background:#554452}
+#soundPanel{z-index:40;max-width:94%;max-height:80%;overflow:auto}#soundStatus{font-size:11px;margin:7px 0;color:#f4e5dc}#soundPanel .testSounds{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}#soundPanel button{min-height:30px}#soundPanel input{touch-action:auto}
+#menuPanel{position:absolute;inset:0;z-index:55;display:none;align-items:center;justify-content:center;background:rgba(17,16,25,.78);padding:16px}
+#menuPanel.open{display:flex}
+#menuPanel .menuBox{width:min(390px,88%);max-height:90%;overflow:auto;text-align:center;padding:22px;background:#302b39;border:1px solid #c6b0bd;border-radius:12px;box-shadow:0 12px 38px #0008}
+#menuPanel h2{font-size:clamp(18px,2.3vw,27px);margin:0 0 12px}
+#menuPanel button{display:block;width:100%;margin:9px 0;padding:12px;min-height:44px;border-radius:7px;border:1px solid #d9c5d1;background:#eee1e5;color:#372d3d;font-weight:bold}
+#menuPanel button:last-child{background:transparent;color:#f5e9ef}
+#titleConfirm[hidden]{display:none!important}#titleConfirm{padding:10px;border:1px solid #c6b0bd;border-radius:8px;margin-top:8px}#titleConfirm button{min-height:44px}
+#menuPanel p{font-size:12px;color:#ddcbd5}
+#line.typing{min-height:2em}#next{display:none}#speed{white-space:nowrap}@media(max-height:440px){#tools{gap:3px}#tools button{font-size:10px;padding:3px 5px}}
+
+/* Ver.0.8.1 save slots and history */
+#savePanel{position:absolute;inset:0;z-index:14;background:#201c2ceF;display:none;align-items:center;justify-content:center;padding:4%;}
+#savePanel.open{display:flex}.saveBox{width:min(660px,95%);max-height:95%;overflow:auto;background:#38303f;border:1px solid #cbb4c6;border-radius:12px;padding:18px;text-align:left;box-shadow:0 12px 40px #0008}.saveBox h2{margin:0 0 6px;font-size:clamp(17px,2.3vw,26px)}.saveBox p{margin:4px 0 12px;font-size:clamp(11px,1.3vw,15px)}.saveRow{display:flex;align-items:center;gap:9px;border-top:1px solid #ffffff30;padding:9px 0}.saveMeta{flex:1;min-width:0;font-size:clamp(11px,1.3vw,15px);line-height:1.5}.saveMeta small{display:block;opacity:.75}.saveRow button,.saveClose,#logSearchClear{border:1px solid #e6cedb88;background:#e9d9e2;color:#352c3b;border-radius:6px;padding:8px 12px;font-size:clamp(11px,1.3vw,15px)}.saveClose{margin-top:8px}#history{z-index:13}#historyTools{display:flex;gap:8px;align-items:center;margin:8px 0 12px}#logSearch{flex:1;min-width:0;padding:8px;border-radius:5px;border:1px solid #d8c5d0;background:#f8f1f5;color:#302936;font-size:14px}#logCount{font-size:12px;opacity:.8}#history p{white-space:pre-wrap}
+
+/* Ver.0.9: restrained editorial-style visual identity */
+:root{--ink:#fff7f1;--panel:rgba(32,28,39,.88);--accent:#e9c9d0}
+#overlay{background:linear-gradient(90deg,rgba(28,24,36,.94) 0%,rgba(39,32,44,.86) 43%,rgba(38,31,43,.22) 100%),url('images/clubroom.jpg') center/cover no-repeat;padding:0;justify-content:flex-start;text-align:left}
+#overlay .titleLayout{position:relative;display:flex;align-items:center;width:100%;height:100%;padding:5% 6%;overflow:hidden}
+#overlay .titleCopy{position:relative;z-index:2;width:65%;max-width:670px}
+#overlay .titleEyebrow{font-size:clamp(10px,1.15vw,15px);letter-spacing:.35em;color:#f2d6d6;margin-bottom:3%}
+#overlay h1{font-family:'Yu Mincho','Hiragino Mincho ProN',serif;font-size:clamp(25px,4.2vw,59px);letter-spacing:.12em;line-height:1.3;margin:0 0 2%;text-shadow:0 2px 18px #0009;white-space:nowrap}
+#overlay .titleTagline{font-family:'Yu Mincho','Hiragino Mincho ProN',serif;font-size:clamp(12px,1.65vw,22px);letter-spacing:.09em;line-height:1.6;color:#f5e1df;margin:0 0 6%}
+#overlay .titleButtons{display:flex;flex-direction:column;align-items:flex-start;gap:9px;width:min(240px,55%)}
+#overlay .titleButtons button{display:block;width:100%;min-height:39px;margin:0;padding:9px 15px;background:rgba(246,230,230,.91);color:#41313f;border:1px solid #f6e9e6;border-radius:3px;font-size:clamp(12px,1.4vw,17px);letter-spacing:.14em;text-align:left;transition:background .2s}
+#overlay .titleButtons button:active{background:#fff}
+#overlay .titleButtons button:focus-visible,#tools button:focus-visible,.smallbtn:focus-visible{outline:2px solid #fff;outline-offset:2px}
+#overlay .titleCharacter{position:absolute;right:2%;bottom:-7%;height:105%;width:39%;object-fit:contain;object-position:bottom center;filter:drop-shadow(-8px 7px 18px #21172499);pointer-events:none;opacity:.96}
+#overlay .titleFooter{margin:4% 0 0;font-size:clamp(9px,1.1vw,13px);line-height:1.5;color:#f1dfe1b8;max-width:350px}
+#overlay .titleVersion{font-size:clamp(10px,1.15vw,14px);letter-spacing:.13em;color:#f1dce2}
+#dialog{border:1px solid rgba(244,218,221,.62);background:linear-gradient(100deg,rgba(30,27,40,.94),rgba(37,31,42,.87));box-shadow:0 8px 30px #100c1d66;border-radius:5px}
+#name{color:#f1cbd6;letter-spacing:.1em}#next{font-size:12px}
+#tools{gap:4px;flex-wrap:wrap;justify-content:flex-end}#tools button{background:rgba(36,31,43,.8);border-color:#f0d6df75;border-radius:4px;letter-spacing:.03em}
+#choices button{border-radius:4px;background:#f9f1edee;border-color:#bfa2af;letter-spacing:.05em}
+#menuPanel .menuBox,#savePanel .saveBox{background:linear-gradient(135deg,#38303f,#292631)}
+@media(max-height:440px){#overlay .titleButtons{gap:4px}#overlay .titleButtons button{min-height:28px;padding:5px 12px}#overlay .titleFooter{margin-top:2%}#overlay .titleTagline{margin-bottom:3%}}
+
+/* Ver.0.9.2: iPhone landscape touch ergonomics */
+#game{touch-action:manipulation}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#tools button{min-height:34px;min-width:43px;padding:7px 8px}
+#choices{top:18%;bottom:38%;justify-content:center;gap:clamp(6px,1.7vh,13px);overflow-y:auto;overscroll-behavior:contain}
+#choices button{min-height:44px;padding:10px 14px;line-height:1.35;flex-shrink:0}
+#dialog{touch-action:manipulation}
+#savePanel .saveBox,#menuPanel .menuBox,#history,#soundPanel{-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.saveRow{min-height:49px}.saveRow button,.saveClose,#logSearchClear{min-height:40px;min-width:55px}
+#historyTools{flex-wrap:wrap}#logSearch{min-height:40px}
+#soundPanel input[type=range]{min-height:30px}
+#soundPanel button{min-height:40px}
+#overlay .titleButtons button{min-height:44px}
+button:focus-visible,#dialog:focus-visible{outline:2px solid #fff4df;outline-offset:2px}
+@media(max-height:440px){
+ #top{top:1.5%;left:1.5%;right:1.5%;align-items:flex-start}
+ #chapter{font-size:clamp(9px,1.25vw,13px);max-width:27%;line-height:1.4}
+ #tools{max-width:74%;gap:3px}
+ #tools button{min-height:32px;min-width:37px;padding:5px 5px;font-size:clamp(9px,1.1vw,12px)}
+ #choices{top:15%;bottom:41%;left:17%;right:17%;gap:5px}
+ #choices button{min-height:38px;padding:6px 10px;font-size:clamp(11px,1.55vw,15px)}
+ #dialog{height:39%;bottom:1.5%;padding:1.5% 2.5%}
+ #name{margin-bottom:.4%}
+ #line{line-height:1.42}
+ .saveBox{padding:10px 14px}.saveRow{padding:5px 0;min-height:43px}
+ .saveRow button{min-height:36px;padding:6px 9px}
+ #menuPanel .menuBox{padding:12px 18px;max-height:94%}
+ #menuPanel button{margin:5px 0;min-height:40px;padding:8px}
+ #overlay .titleButtons button{min-height:36px}
+}
+@media(max-height:340px){
+ #tools button{min-height:29px;padding:3px 5px}
+ #choices{bottom:43%}
+ #dialog{height:42%}
+}
+</style></head><body><div id="shell"><main id="game" aria-label="ビジュアルノベル"><div id="room"></div><div class="light"></div><div id="windVeil"></div><div id="effectCaption"></div><div id="noteCut" aria-hidden="true"><div id="notePaper"><div id="noteTitle">生成り色のノート</div><div id="noteWriting"></div></div></div><div id="flash"></div><div class="figure" id="figure"><img id="sprite" src="images/expression_normal.png" alt="鶴矢先輩"></div><header id="top"><div id="chapter">第一話　夏の部室　Ver.0.9.2</div><nav id="tools"><button id="save">SAVE</button><button id="load">LOAD</button><button id="auto">AUTO</button><button id="speed" type="button" title="文字送り速度">速度:普通</button><button id="log">LOG</button><button id="sound" aria-pressed="false">SOUND</button><button id="menu">MENU</button></nav></header><div id="soundPanel"><label>音量 <output id="volumeValue">55%</output> <input id="volume" type="range" min="0" max="100" value="55"></label><button id="mute">音を消す</button><div id="soundStatus" role="status">音声を準備中</div><div class="testSounds"><button id="testPage">紙の音を試す</button><button id="testWind">風の音を試す</button><button id="testMystery">謎の音を試す</button></div><button id="closeSound">閉じる</button></div><section id="dialog" role="button" tabindex="0" aria-label="次の台詞へ"><div id="name"></div><div id="line"></div><div id="next">▼</div></section><div id="choices"></div><div id="history"><button class="smallbtn" id="closeLog">閉じる</button><h2>会話履歴</h2><div id="historyTools"><input id="logSearch" type="search" placeholder="会話を検索" aria-label="会話履歴を検索"><button id="logSearchClear" type="button">消去</button><span id="logCount"></span></div><div id="logItems"></div></div><section id="savePanel" role="dialog" aria-modal="true" aria-label="セーブ・ロード"><div class="saveBox"><h2 id="saveHeading">セーブ</h2><p id="saveHelp">3つの保存場所から選べます。</p><div id="saveRows"></div><button class="saveClose" id="saveClose" type="button">閉じる・ゲームに戻る</button></div></section><div class="toast" id="toast"></div><div id="menuPanel" role="dialog" aria-modal="true" aria-label="ゲームメニュー"><div class="menuBox"><h2>MENU</h2><button id="closeMenu" type="button">閉じる・ゲームに戻る</button><button id="titleFromMenu" type="button">タイトルに戻る</button><div id="titleConfirm" hidden><p>保存していない進行状況は失われます。タイトルに戻りますか？</p><button id="confirmTitle" type="button">タイトルに戻る（確定）</button><button id="cancelTitle" type="button">キャンセル</button></div><p>タイトルに戻る前に、必要ならSAVEで保存してください。</p></div></div><div id="overlay"><div class="titleLayout"><img class="titleCharacter" src="images/tsuruya_full_normal.png" alt="鶴矢先輩の立ち絵"><div class="titleCopy"><div class="titleEyebrow">LITERATURE CLUB · SUMMER</div><h1>鶴矢先輩と僕の日常</h1><p class="titleTagline">――まだ書かれていない放課後の続きを、君と。</p><p class="titleVersion">第一話　夏の部室　｜　Ver.0.9.2</p><div class="titleButtons"><button id="start" type="button">はじめから</button><button id="continue" type="button">つづきから</button></div><p class="titleFooter">横画面推奨・タップで読み進める<br>音声はゲーム開始後に再生されます</p><p id="diagnostic" class="titleFooter">読み込み中…</p></div></div></div></main></div><div id="rotate"><div><span>↻</span>iPhoneを横向きにしてください<br><small>横画面で物語が始まります</small></div></div><script>
+'use strict';const $=id=>document.getElementById(id);const scenes=[
+{n:'稲見',t:'八月の終わり。夏休みの校舎は、いつもより少しだけ広く感じる。',hide:true},
+{n:'稲見',t:'文芸部の扉を開けると、鶴矢先輩が窓際の席で文庫本を読んでいた。'},
+{n:'鶴矢先輩',t:'……あ、来た。今日はずいぶん早いね。'},
+{n:'稲見',t:'先輩こそ。何か書いていたんですか。'},
+{n:'鶴矢先輩',t:'ううん。今日は何もしない日にしようかなって。……君はどうする？',c:[['先輩の隣に座る',5,1],['何か書きませんか、と提案する',7,0]]},
+{n:'鶴矢先輩',t:'ふふ。君も暇なんだね。……まあ、私もだけど。',to:9},
+{n:'稲見',t:'',to:9},
+{n:'鶴矢先輩',t:'真面目だなあ。じゃあ、何も書かないことについて書いてみる？',to:8},
+{n:'稲見',t:'それ、もう何か書いてることになりませんか。',to:9},
+{n:'稲見',t:'扇風機が首を振る。机の端には、見慣れない生成り色のノートが置かれていた。'},
+{n:'稲見',t:'……そのノート、先輩のですか。'},
+{n:'鶴矢先輩',t:'違うよ。棚の奥にあったんだ。少し変なことが書いてあってね。'},
+{n:'鶴矢先輩',t:'見てみる？',c:[['自分で開いてみる',13,0],['先輩に読んでもらう',15,1]]},
+{n:'稲見',t:'表紙をめくると、最初のページにまだ来ていない日付があった。',to:14},
+{n:'稲見',t:'「八月三十一日、午後四時。二人は窓の外を見る」……？',to:17},
+{n:'鶴矢先輩',t:'じゃあ、私が読むね。「八月三十一日、午後四時。二人は窓の外を見る」',to:16},
+{n:'稲見',t:'……まだ、その日にはなっていませんよね。',to:17},
+{n:'鶴矢先輩',t:'ねえ、稲見くん。これって未来を当ててるのかな。それとも、読んだ私たちがその通りに動くのかな？',c:[['未来なんて決まってませんよ',18,1],['試してみたら分かるかもしれません',20,0]]},
+{n:'鶴矢先輩',t:'……そうだね。私も、まだ書かれていないほうが好きかな。',to:19},
+{n:'稲見',t:'先輩は、少しだけ安心したように笑った。',to:22},
+{n:'鶴矢先輩',t:'ふふ。じゃあ三十一日に実験しようか。文芸部らしくないけどね。',to:21},
+{n:'稲見',t:'それはそれで、先輩らしい気がします。',to:22},
+{n:'稲見',t:'そのとき、窓から風が吹いた。ノートのページが、ひとりでに一枚めくれる。'},
+{n:'稲見',t:'そこには、さっきまでなかったはずの一行があった。'},
+{n:'稲見',t:'「二人は、まだこちらに気づいていない」'},
+{n:'鶴矢先輩',t:'……今日は、ここまでにしておこうか。'},
+{n:'稲見',t:'先輩はいつもの調子で笑った。でも、ノートを閉じる指先だけが、少し慎重だった。'},
+{n:'',t:'第一話　おわり',end:true,hide:true}
+];
+// Ver.0.8.1: A quiet writing exercise before the mysterious notebook appears.
+const addedScenes=[
+ {n:'稲見',t:'僕は椅子を引いて、机の上に原稿用紙を一枚広げた。窓の外では蝉が鳴いている。'},
+ {n:'鶴矢先輩',t:'せっかくだから、短い文章をひとつずつ書こうか。題は「夏の音」。三行だけ。'},
+ {n:'稲見',t:'三行ですか。短いようで、難しそうですね。'},
+ {n:'鶴矢先輩',t:'難しく考えなくていいよ。今ここで聞こえる音でも、聞こえない音でも。'},
+ {n:'稲見',t:'鉛筆を持ったまま、しばらく考える。先輩のページにはもう文字が並び始めていた。',c:[['窓の外の蝉について書く',14,0],['扇風機の音について書く',16,1]]},
+ {n:'稲見',t:'「蝉の声が途切れると、夏は少しだけ遠くなる」――僕はそう書いた。',to:18},
+ {n:'稲見',t:'',to:18},
+ {n:'稲見',t:'「扇風機が首を振るたび、部室の静けさが動く」――僕はそう書いた。',to:18},
+ {n:'稲見',t:'',to:18},
+ {n:'鶴矢先輩',t:'……いいね。稲見くんの文章って、目立たないところをちゃんと見てる。'},
+ {n:'稲見',t:'先輩はどう書いたんですか。'},
+ {n:'鶴矢先輩',t:'「まだ聞いていない音が、窓の向こうで待っている」。……ちょっと大げさかな。'},
+ {n:'稲見',t:'そんなことないと思います。先輩らしいです。'},
+ {n:'鶴矢先輩',t:'そう？　じゃあ、今日の部誌には二人の三行を載せようか。'},
+ {n:'稲見',t:'先輩が原稿用紙を重ねたとき、その下から見慣れない生成り色の表紙がのぞいた。'}
+];
+const INSERT_AT=9,INSERT_COUNT=addedScenes.length;
+for(const sc of scenes){if(typeof sc.to==='number'&&sc.to>=INSERT_AT)sc.to+=INSERT_COUNT;if(sc.c)for(const choice of sc.c)if(choice[1]>=INSERT_AT)choice[1]+=INSERT_COUNT}
+// Correct the original early branches: both routes must enter the new writing scene.
+// Before insertion, original scenes 5, 6 and 8 led to scene 9.
+// Redirect these to the inserted scene at index 9, not the shifted old scene 9.
+for(const i of [5,6,8]) if(scenes[i].to===INSERT_AT+INSERT_COUNT) scenes[i].to=INSERT_AT;
+// The writing choice is within the newly inserted segment; its target indices are absolute.
+addedScenes[4].c[0][1]=INSERT_AT+5;
+addedScenes[4].c[1][1]=INSERT_AT+7;
+addedScenes[5].to=INSERT_AT+9;
+addedScenes[7].to=INSERT_AT+9;
+scenes.splice(INSERT_AT,0,...addedScenes);
+function oldSceneIndex(i){return i>=INSERT_AT+INSERT_COUNT?i-INSERT_COUNT:i>=INSERT_AT?-1:i}
+let state={i:0,aff:0,history:[]},autoTimer=null,autoActive=false,typeTimer=null,typing=false,fullText='',typeIndex=0;const SPEEDS=[{label:'遅い',ms:75},{label:'普通',ms:38},{label:'速い',ms:15},{label:'一括',ms:0}];let speedIndex=1;try{const savedSpeed=Number(localStorage.getItem('tsuruya-text-speed'));if(Number.isInteger(savedSpeed)&&savedSpeed>=0&&savedSpeed<4)speedIndex=savedSpeed}catch(e){}const KEY='tsuruya-vn-save-v061';function toast(s){$('toast').textContent=s;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',1600)}function stopAuto(){autoActive=false;clearTimeout(autoTimer);autoTimer=null;$('auto').textContent='AUTO'}
+function stopTyping(){clearTimeout(typeTimer);typeTimer=null;typing=false;$('line').classList.remove('typing')}
+function finishTyping(){if(!typing)return;stopTyping();$('line').textContent=fullText;$('next').style.display=(!scenes[state.i].c&&!scenes[state.i].end)?'block':'none';if(autoActive)scheduleAuto()}
+function startTyping(text){stopTyping();fullText=text||'';typeIndex=0;$('line').textContent='';$('next').style.display='none';if(!fullText||SPEEDS[speedIndex].ms===0){$('line').textContent=fullText;typing=false;if(!scenes[state.i].c&&!scenes[state.i].end)$('next').style.display='block';if(autoActive)scheduleAuto();return}typing=true;$('line').classList.add('typing');const tick=()=>{if(!typing)return;const chars=Array.from(fullText);typeIndex++;$('line').textContent=chars.slice(0,typeIndex).join('');if(typeIndex>=chars.length){finishTyping()}else{typeTimer=setTimeout(tick,SPEEDS[speedIndex].ms)}};typeTimer=setTimeout(tick,SPEEDS[speedIndex].ms)}
+function scheduleAuto(){clearTimeout(autoTimer);if(!autoActive||typing)return;const sc=scenes[state.i];if(sc.c||sc.end){stopAuto();return}autoTimer=setTimeout(()=>{if(!autoActive)return;const scene=scenes[state.i];state.i=scene.to??Math.min(state.i+1,scenes.length-1);render()},Math.max(1100,Array.from(sc.t||'').length*55))}
+$('speed').onclick=()=>{speedIndex=(speedIndex+1)%SPEEDS.length;$('speed').textContent='速度:'+SPEEDS[speedIndex].label;try{localStorage.setItem('tsuruya-text-speed',speedIndex)}catch(e){}if(typing){const shown=typeIndex;stopTyping();if(SPEEDS[speedIndex].ms===0){$('line').textContent=fullText;$('next').style.display=scenes[state.i].c||scenes[state.i].end?'none':'block';if(autoActive)scheduleAuto()}else{typeIndex=shown;typing=true;$('line').classList.add('typing');const resume=()=>{if(!typing)return;typeIndex++;$('line').textContent=Array.from(fullText).slice(0,typeIndex).join('');if(typeIndex>=Array.from(fullText).length)finishTyping();else typeTimer=setTimeout(resume,SPEEDS[speedIndex].ms)};typeTimer=setTimeout(resume,SPEEDS[speedIndex].ms)}}};$('speed').textContent='速度:'+SPEEDS[speedIndex].label;
+function render(){const s=scenes[state.i];runSceneEffect(oldSceneIndex(state.i));$('name').textContent=s.n||'';startTyping(s.t);$('figure').classList.toggle('hidden',!!s.hide);$('sprite').src='images/'+(s.n==='鶴矢先輩'?(oldSceneIndex(state.i)===2?'expression_normal.png':oldSceneIndex(state.i)===5?'expression_smile.png':oldSceneIndex(state.i)===7?'expression_smile.png':oldSceneIndex(state.i)===11?'expression_thinking.png':oldSceneIndex(state.i)===12?'expression_normal.png':oldSceneIndex(state.i)===15?'expression_normal.png':oldSceneIndex(state.i)===17?'expression_thinking.png':oldSceneIndex(state.i)===18?'expression_smile.png':oldSceneIndex(state.i)===20?'expression_happy.png':oldSceneIndex(state.i)===25?'expression_worried.png':'expression_normal.png'):'expression_normal.png');$('choices').replaceChildren();if(s.c||s.end){stopTyping();$('line').textContent=s.t;$('next').style.display='none';if(autoActive)stopAuto();}if(s.c){s.c.forEach(([label,to,aff])=>{let b=document.createElement('button');b.textContent=label;b.onclick=()=>{stopAuto();state.aff+=aff;state.i=to;render()};$('choices').append(b)})}if(s.end){let b=document.createElement('button');b.textContent='タイトルに戻る';b.onclick=showTitle;$('choices').append(b)}if(s.t && !(state.history.length && state.history[state.history.length-1].n===s.n && state.history[state.history.length-1].t===s.t))state.history.push({n:s.n,t:s.t});if(state.history.length>100)state.history.shift()}let effectTimer=null;function clearSceneEffect(){clearTimeout(effectTimer);['windVeil','flash','effectCaption'].forEach(id=>$(id).classList.remove('active'));$('noteCut').classList.remove('active','mystery');$('noteWriting').textContent='';$('effectCaption').textContent='';}
+function runSceneEffect(i){clearSceneEffect();playSceneSound(i);if(i===9){$('effectCaption').textContent='夏の午後、静かな部室。';$('effectCaption').classList.add('active')}
+if(i===13||i===15){$('noteWriting').textContent='八月三十一日、午後四時。\n二人は窓の外を見る。';$('noteCut').classList.add('active')}
+if(i===22){$('windVeil').classList.add('active');$('effectCaption').textContent='――ふわり、と風が吹いた。';$('effectCaption').classList.add('active')}
+if(i===23){$('flash').classList.add('active');$('noteWriting').textContent='……';$('noteCut').classList.add('active')}
+if(i===24){$('noteWriting').textContent='二人は、まだこちらに気づいていない。';$('noteCut').classList.add('active','mystery')}
+}
+function advance(){if(typing){finishTyping();return}stopAuto();let s=scenes[state.i];if(s.c||s.end||$('overlay').style.display!=='none'||$('history').style.display==='block'||$('menuPanel').classList.contains('open')||$('soundPanel').style.display==='block')return;state.i=s.to??Math.min(state.i+1,scenes.length-1);render()}function showTitle(){stopTyping();$('menuPanel').classList.remove('open');$('overlay').style.display='flex';stopAuto();clearSceneEffect()}function start(){unlockSound();stopAuto();stopTyping();state={i:0,aff:0,history:[]};$('overlay').style.display='none';render()}function load(){stopAuto();stopTyping();try{let s=JSON.parse(localStorage.getItem(KEY));if(!s||!Number.isInteger(s.i)||s.i<0||s.i>=scenes.length)throw Error();state={i:s.i,aff:s.aff||0,history:Array.isArray(s.history)?s.history:[]};$('overlay').style.display='none';render();toast('ロードしました')}catch{toast('セーブデータがありません')}}$('start').addEventListener('click',start);$('start').addEventListener('touchend',function(e){e.preventDefault();start()},{passive:false});$('continue').onclick=()=>{unlockSound();load()};$('menu').onclick=()=>{stopAuto();$('soundPanel').style.display='none';$('history').style.display='none';$('titleConfirm').hidden=true;$('titleFromMenu').hidden=false;$('menuPanel').classList.add('open')};$('closeMenu').onclick=()=>{$('titleConfirm').hidden=true;$('titleFromMenu').hidden=false;$('menuPanel').classList.remove('open')};$('titleFromMenu').onclick=()=>{$('titleConfirm').hidden=false;$('titleFromMenu').hidden=true};$('cancelTitle').onclick=()=>{$('titleConfirm').hidden=true;$('titleFromMenu').hidden=false};$('confirmTitle').onclick=()=>{$('titleConfirm').hidden=true;$('titleFromMenu').hidden=false;$('savePanel').classList.remove('open');$('history').style.display='none';$('soundPanel').style.display='none';showTitle()};$('save').onclick=()=>{try{localStorage.setItem(KEY,JSON.stringify(state));toast('セーブしました')}catch{toast('保存できませんでした')}};$('load').onclick=load;$('dialog').onclick=advance;$('dialog').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();advance()}};$('auto').onclick=()=>{unlockSound();if(autoActive){stopAuto();return}if(scenes[state.i].c||scenes[state.i].end)return;autoActive=true;$('auto').textContent='STOP';if(!typing)scheduleAuto()};$('log').onclick=()=>{stopAuto();$('logItems').replaceChildren();state.history.forEach(x=>{let p=document.createElement('p');let strong=document.createElement('strong');strong.textContent=x.n+'　';p.append(strong,document.createTextNode(x.t));$('logItems').append(p)});$('history').style.display='block'};$('closeLog').onclick=()=>$('history').style.display='none';document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'&&$('overlay').style.display==='none')advance()});
+// Ver.0.5.2: AudioContext-based one-shot effects and an explicit iPhone sound test.
+// Ver.0.5.2: Web Audio controls BOTH ambience and sound effects on iOS Safari.
+const soundFiles={ambient:'audio/ohirusugi.mp3',page:'audio/page.wav',wind:'audio/wind.wav',mystery:'audio/mystery.wav'};
+let audioCtx=null,masterGain=null,ambientGain=null,ambientSource=null;
+let buffers={},pending={},soundUnlocked=false,muted=false,volume=.55;
+const status=msg=>{$('soundStatus').textContent=msg};
+function applyVolume(){
+  if(masterGain&&audioCtx)masterGain.gain.setTargetAtTime(muted?0:volume,audioCtx.currentTime,.015);
+  $('mute').textContent=muted?'音を出す':'音を消す';
+  $('mute').setAttribute('aria-pressed',String(muted));
+  $('sound').setAttribute('aria-pressed',String(!muted));
+  $('volume').value=Math.round(volume*100);
+  $('volumeValue').textContent=Math.round(volume*100)+'%';
+}
+function initAudio(){
+  if(!audioCtx){
+    try{
+      audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+      masterGain=audioCtx.createGain();masterGain.connect(audioCtx.destination);
+      ambientGain=audioCtx.createGain();ambientGain.gain.value=.52;ambientGain.connect(masterGain);
+      applyVolume();
+    }catch(e){status('このブラウザは音声に対応していません');return}
+  }
+  if(audioCtx.state==='suspended')audioCtx.resume().catch(()=>{});
+  for(const key of Object.keys(soundFiles))if(!buffers[key]&&!pending[key]){
+    pending[key]=fetch(soundFiles[key]).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.arrayBuffer()})
+      .then(b=>audioCtx.decodeAudioData(b)).then(buf=>{buffers[key]=buf;delete pending[key];return buf})
+      .catch(e=>{delete pending[key];status('音声読込エラー：'+key);return null});
+  }
+}
+async function startAmbience(){
+  if(!audioCtx||ambientSource)return;
+  const ctx=audioCtx;
+  try{
+    const buf=buffers.ambient||(pending.ambient?await pending.ambient:null);
+    if(!buf||ambientSource||ctx!==audioCtx)return;
+    const source=ctx.createBufferSource();source.buffer=buf;source.loop=true;
+    source.connect(ambientGain);source.start();ambientSource=source;
+    status('BGM：再生中（音量 '+Math.round(volume*100)+'%）');
+  }catch(e){status('環境音を開始できませんでした')}
+}
+function unlockSound(){soundUnlocked=true;initAudio();applyVolume();startAmbience()}
+async function cue(name,manual=false){
+  if(!soundUnlocked){if(manual)status('先に「はじめから」を押してください');return}
+  initAudio();if(!audioCtx)return;
+  try{
+    const buf=buffers[name]||(pending[name]?await pending[name]:null);
+    if(!buf){status('音声を読み込めませんでした');return}
+    if(audioCtx.state==='suspended')await audioCtx.resume();
+    const source=audioCtx.createBufferSource(),gain=audioCtx.createGain();
+    source.buffer=buf;gain.gain.value=.95;source.connect(gain);gain.connect(masterGain);source.start();
+    if(manual)status(muted?'ミュート中です（再生テストは無音）':'再生しました：'+({page:'紙',wind:'風',mystery:'謎'}[name]||name));
+  }catch(e){status('再生できません。画面をタップして再試行してください')}
+}
+function playSceneSound(i){if(i===13||i===15||i===23)cue('page');if(i===22)cue('wind');if(i===24)cue('mystery')}
+$('sound').onclick=()=>{$('soundPanel').style.display=$('soundPanel').style.display==='block'?'none':'block';unlockSound()};
+$('volume').oninput=e=>{volume=Number(e.target.value)/100;applyVolume();status('音量：'+Math.round(volume*100)+'%（BGMと効果音の両方）')};
+$('volume').onchange=$('volume').oninput;
+$('mute').onclick=()=>{muted=!muted;applyVolume();if(!muted)unlockSound();status(muted?'ミュート中：すべての音を停止':'音声オン：すべての音を再開')};
+$('testPage').onclick=()=>{unlockSound();cue('page',true)};
+$('testWind').onclick=()=>{unlockSound();cue('wind',true)};
+$('testMystery').onclick=()=>{unlockSound();cue('mystery',true)};
+$('closeSound').onclick=()=>$('soundPanel').style.display='none';
+applyVolume();
+
+// Ver.0.8.1: three local save slots, legacy slot migration, and searchable log.
+const SAVE_PREFIX='tsuruya-vn-v08-slot-';
+let saveMode='save';
+const slotKey=n=>SAVE_PREFIX+n;
+function readSlot(n){try{const raw=localStorage.getItem(slotKey(n));const x=raw&&JSON.parse(raw);return x&&Number.isInteger(x.i)&&x.i>=0&&x.i<scenes.length?x:null}catch(e){return null}}
+function legacySave(){try{const x=JSON.parse(localStorage.getItem(KEY));return x&&Number.isInteger(x.i)&&x.i>=0&&x.i<scenes.length?x:null}catch(e){return null}}
+function hasSaves(){return [1,2,3].some(n=>!!readSlot(n))||!!legacySave()}
+function formatSave(x){if(!x)return '空きスロット';const d=x.savedAt?new Date(x.savedAt).toLocaleString('ja-JP'):'旧バージョンからの保存';const t=scenes[x.i]?.t||'';return d+' / '+t.slice(0,36)+(t.length>36?'…':'')}
+function refreshSlots(){const box=$('saveRows');box.replaceChildren();for(let n=1;n<=3;n++){
+ const x=readSlot(n)||(n===1?legacySave():null);
+ const row=document.createElement('div');row.className='saveRow';
+ const meta=document.createElement('div');meta.className='saveMeta';const name=document.createElement('strong');name.textContent='スロット '+n;const info=document.createElement('small');info.textContent=formatSave(x);meta.append(name,info);row.append(meta);
+ const act=document.createElement('button');act.textContent=saveMode==='save'?'保存':(x?'再開':'データなし');act.disabled=saveMode==='load'&&!x;
+ act.onclick=()=>{if(saveMode==='save'){
+ if(x&&act.dataset.confirm!=='yes'){act.dataset.confirm='yes';act.textContent='上書きを確定';toast('もう一度押すと上書き保存します');return;}
+ // Native confirm() can suspend Web Audio on iOS Safari; use two taps instead.
+ unlockSound();
+ try{localStorage.setItem(slotKey(n),JSON.stringify({...state,savedAt:Date.now()}));refreshSlots();toast('スロット '+n+' に保存しました')}catch(e){toast('保存できませんでした')}
+ }else{const v=readSlot(n)||(n===1?legacySave():null);if(!v)return;stopAuto();stopTyping();state={i:v.i,aff:v.aff||0,history:Array.isArray(v.history)?v.history.slice(-100):[]};$('overlay').style.display='none';$('savePanel').classList.remove('open');unlockSound();render();toast('スロット '+n+' から再開しました')}};row.append(act);
+ if(x){const del=document.createElement('button');del.textContent='削除';del.onclick=()=>{if(del.dataset.confirm!=='yes'){del.dataset.confirm='yes';del.textContent='削除を確定';toast('もう一度押すと削除します');return;}unlockSound();try{localStorage.removeItem(slotKey(n));if(n===1)localStorage.removeItem(KEY)}catch(e){}refreshSlots()};row.append(del)}box.append(row)
+ }}
+function openSaves(mode){stopAuto();$('history').style.display='none';$('soundPanel').style.display='none';$('menuPanel').classList.remove('open');saveMode=mode;$('saveHeading').textContent=mode==='save'?'セーブ':'ロード';$('saveHelp').textContent=mode==='save'?'保存先を選んでください。上書き前には確認します。':'再開するデータを選んでください。';refreshSlots();$('savePanel').classList.add('open')}
+$('save').onclick=()=>openSaves('save');$('load').onclick=()=>openSaves('load');$('saveClose').onclick=()=>{$('savePanel').classList.remove('open');unlockSound()};
+$('continue').onclick=()=>{unlockSound();openSaves('load')};
+const originalStart=start; // start is kept as-is
+function paintLog(){const q=$('logSearch').value.trim().toLocaleLowerCase();const rows=state.history.filter(x=>((x.n||'')+' '+(x.t||'')).toLocaleLowerCase().includes(q));$('logItems').replaceChildren();for(const x of rows){const p=document.createElement('p');const strong=document.createElement('strong');strong.textContent=(x.n||'地の文')+'　';p.append(strong,document.createTextNode(x.t||''));$('logItems').append(p)}$('logCount').textContent=rows.length+'件';if(!rows.length){const p=document.createElement('p');p.textContent='該当する会話はありません';$('logItems').append(p)}}
+$('log').onclick=()=>{stopAuto();$('logSearch').value='';paintLog();$('history').style.display='block'};$('logSearch').oninput=paintLog;$('logSearchClear').onclick=()=>{$('logSearch').value='';paintLog()};
+// Disable dialogue advancement while the save/load panel is open.
+const oldAdvance=advance; $('dialog').onclick=()=>{if(!$('savePanel').classList.contains('open'))oldAdvance()};
+$('dialog').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&!$('savePanel').classList.contains('open')){e.preventDefault();oldAdvance()}};
+$('menu').onclick=()=>{stopAuto();$('savePanel').classList.remove('open');$('soundPanel').style.display='none';$('history').style.display='none';$('titleConfirm').hidden=true;$('titleFromMenu').hidden=false;$('menuPanel').classList.add('open')};
+$('chapter').textContent='第一話　夏の部室　Ver.0.9.2';
+</script></body></html>
