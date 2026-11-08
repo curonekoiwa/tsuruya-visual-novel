@@ -1,1 +1,0 @@
-# tsuruya-visual-novel
